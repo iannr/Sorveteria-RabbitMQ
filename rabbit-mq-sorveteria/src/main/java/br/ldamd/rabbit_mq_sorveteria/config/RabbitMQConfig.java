@@ -7,10 +7,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitMQConfig {
 
-    public static final String FILA_PEDIDOS = "fila_pedidos_sorvete";
+    public static final String QUEUE_PEDIDOS = "fila_pedidos";
 
     @Bean
-    public Queue filaPedidos() {
-        return new Queue(FILA_PEDIDOS, false);
+    public Queue queue() {
+        return new Queue(QUEUE_PEDIDOS, false);
     }
 }
