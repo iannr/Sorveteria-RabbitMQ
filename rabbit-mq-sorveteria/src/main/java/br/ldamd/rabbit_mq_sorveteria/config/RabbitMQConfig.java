@@ -11,6 +11,6 @@ public class RabbitMQConfig {
 
     @Bean
     public Queue queue() {
-        return new Queue(QUEUE_PEDIDOS, false);
+        return new Queue(QUEUE_PEDIDOS, false); // Se for falso, a fila não é durável
     }
 }
